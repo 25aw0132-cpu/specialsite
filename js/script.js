@@ -1,7 +1,7 @@
 const imagePaths = [
   "images/IMG_20250711_184819411.jpg",
   "images/IMG_20250711_173958222.jpg",
-  "images/IMG_2911.jpg",
+  "images/IMG_2911.JPG",
   "images/IMG_1673.jpeg",
   "images/IMG_2931.JPG",
   "images/IMG_1355_1.jpg"
