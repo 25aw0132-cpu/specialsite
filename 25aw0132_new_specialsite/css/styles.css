@@ -1,0 +1,2386 @@
+@charset "UTF-8";
+html,
+body {
+  background-color: #c1e5bf;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  background-color: #71ad70;
+  width: auto;
+  min-width: 1000px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul li a {
+  display: flex;             
+  align-items: center;      
+  justify-content: center;   
+  height: 50px;             
+  padding: 0 15px;           
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav {
+  max-width: 1000px;     
+ font-size: small;
+ width: auto;
+  display: flex;
+  align-items: flex-start; 
+  text-align: center; 
+  margin-top: -15px;
+}
+nav a {
+  display: inline-block; 
+  width: 130px;
+  transition: transform 0.3s ease;
+  margin: 0 auto; 
+}
+
+nav a:hover {
+  transform: translateY(-5px); 
+}
+
+nav img {
+  width: 230px;
+  height: 60px;
+  padding-top: 15px;
+  
+}
+.school-site:hover {
+  color: #b9ff8b !important;
+}
+
+.horizontal-menu {
+  width: 100%;
+  max-width: 1000px;        
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.horizontal-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0 20px;
+  margin: 0;
+}
+.horizontal-menu li:last-child a:hover {
+  color: #b9ff8a; 
+}
+
+
+.horizontal-menu li {
+  position: relative;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 175px;
+}
+
+.horizontal-menu li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 35px;
+  border-right: 2px solid;
+border-image: linear-gradient(to bottom, #fff, #b9ff8b);
+border-image-slice: 1;
+}
+header nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff759;
+  transition: width 0.3s ease;
+}
+
+header nav ul li a:hover::after {
+  width: 100%;
+}
+
+.horizontal-menu a {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  display: block;
+  transition: color 0.3s;
+}
+
+.horizontal-menu a:hover {
+  color: #fff759; 
+}
+#slider-image,
+.container,
+.slider {
+  border-radius: 0 !important;
+  overflow: hidden;
+}
+main {
+  text-align: center;
+  color: #666666;
+  background-color: white;
+  width: 1000px;
+  left: 0;
+  top: 100px;
+  text-align: center;
+  margin: 0 auto;
+  height: 2642px;
+}
+main img {
+  width: 588px;
+  height: 827px;
+  box-shadow: 0 0 4px 0;
+}
+.main-title {
+
+  font-family: "UoqMunThenKhung", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 42px;
+  color: #6ebc6e;
+  writing-mode: vertical-rl;   
+  text-orientation: upright;  
+   margin: 40px 120px 40px; 
+  line-height: 1.8;
+      opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+  
+}
+
+
+
+@keyframes fadeIn {
+  to {
+    opacity: 1; 
+  }
+}
+.container {
+  display: flex;
+  align-self: center;
+  background-color: #fcf1cd;
+ border-bottom: 7px solid #6ebc6e;;
+  max-width: 1200px;
+  width: 100%;
+  height: 19%;
+  margin: 0 auto;
+}
+.slider {
+  width: 870px;
+  height: 555px;
+  margin: 0 auto;
+  object-fit: cover;
+  position: relative;
+  overflow: hidden;
+
+}
+#slider-image{
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  opacity: 1;
+  display: block;
+  transition: opacity 1s ease-in-out;
+  position: relative;
+  
+}
+
+.vertical-text span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-40px);
+  animation: dropIn 3.5s ease-out forwards;
+}
+
+
+.top-text {
+  margin-left: 200px;
+  position: relative;
+  top: 50px;
+}
+.top-text p{
+  width: 800px;
+  text-align: left;
+  line-height: 25px;
+  font-size: 20px;
+  margin-left: -40px;
+      font-family: "Zen Maru Gothic", sans-serif;
+}
+h2 + .top-text p:first-of-type {
+  margin-top: 60px;
+}
+
+.intro-page h2 {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+margin: 0 auto;
+  font-family: "Zen Maru Gothic", sans-serif;
+  margin-top: 80px;
+  color: #6ebc6e;
+  top: 30px;
+}
+
+.intro-page h2::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: -28px;
+  width: 90%;
+  max-width: 90%;
+  height: 40px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='40' viewBox='0 0 400 40'%3E%3Cpath d='M0 20 Q100 0 200 20 T400 20' stroke='%23b8d8b8' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x;
+  background-size: 200px 40px;
+}
+
+
+
+
+.top-text p:last-of-type {
+  padding-bottom: 20px; 
+  
+}
+section:nth-of-type(2) p {
+  color: #666666;  
+  font-size: 20px;
+  text-align: center;
+    width: 800px;
+    transform: translate(0, 40px);
+  line-height: 25px;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 165px;
+}
+
+.top-students, .top-rules, .top-aboutme {
+  position: relative;
+  
+  top: 124px;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;     
+  text-align: center;
+  background-color: #fcf1cd;
+  width: 100%;            
+  max-width: 1000px;      
+  margin: 0 auto;     
+  padding: 0;           
+  height: 350px;           
+}
+
+.top-students h3, .top-rules h3, .top-aboutme h3 {
+  font-size: 26px;
+  font-family: "Zen Maru Gothic", sans-serif;
+  color: #71ad70;
+  margin-bottom: 20px;
+  margin-left: 410px;
+  transform: none;       
+}
+
+
+.top-studentpic img, .top-rulespic img, .top-about-me-pic img {
+  width: 370px;
+  max-width:400px;
+  height: 300px;
+  margin-top: 10px;        
+  display: block;
+  margin-left: -500px;
+  margin-top: -83px;
+  object-fit: cover;
+}
+
+
+.student-text, .top-rules-text, .aboutme-text {
+  color: #666666;
+    font-family: "Zen Maru Gothic", sans-serif;
+  max-width: 100%;
+  font-size: 20px;
+  width: 80%;
+}
+
+.student-text p, .top-rules-text p, .aboutme-text p {
+  color: #666666;
+    font-family: "Zen Maru Gothic", sans-serif;
+  max-width: 100%;
+  font-size: 20px;
+  width: 65%;
+  margin-top: -200px;
+  margin-left: 340px;
+}
+
+
+.details1, .details2, .details3 {
+    font-family: "Zen Maru Gothic", sans-serif;
+  position: absolute;
+  width: 120px;
+  height: 55px;
+  left: 650px;
+  top: 200px;
+  background: #C1E5BF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1000;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.details1:hover,
+.details2:hover,
+.details3:hover {
+  color: #ffff90; 
+}
+.details1:hover,
+.details2:hover,
+.details3:hover {
+  transform: translateY(-4px);
+}
+.details1:active,
+.details2:active,
+.details3:active {
+  
+  color: #ffffff; 
+}
+
+.zen-kurenaido-regular {
+  font-family: "Zen Kurenaido", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+  /*FOOTER*/
+
+footer {
+  position: relative;
+  background-color: #71ad70; 
+padding: 40px 0;
+height: 135px;
+  width: 100%;
+  min-width: 1000px;
+}
+footer button, 
+footer .footer-btn {
+    font-family: initial; 
+}
+.footer-inner{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  height: 150px;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  
+}
+
+.footer-links li a{
+  position: relative;
+  right: 80px;
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff;
+  font-size: 16px;
+ 
+
+
+  
+}
+address {
+  font-size: 14px;
+  margin-left: 175px;
+  color: #ffffff;
+  width: 100%;
+  margin: 0 0 0 150px;
+
+
+}
+
+footer .school-address {
+  text-align: left;      
+  font-size: 14px;
+  
+  color: white;
+  max-width: 1000px;    
+  margin: 0 auto 5px 75px; 
+}
+
+footer p.copy-right {
+  text-align: left;      
+  font-size: 11px;
+  color: white;
+  margin: 0 600px 0 0;    
+}
+footer nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Top-buttom*/
+.top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 270px;
+  display: inline-block;
+  background-color: #aec1aa;
+  color: white;
+  font-size: 20px;
+  padding: 12px 16px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  z-index: 1000;
+  opacity: 0.7;
+  transition: background-color 0.3s;
+}
+
+.top-btn:hover {
+  background-color: #bcef9f;
+}
+
+
+
+.glow-link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+.glow-link:hover {
+  color: #b0fd91;
+  text-shadow: 0 0 5px rgba(255, 193, 23, 0.8);
+
+}
+.open-campus-button {
+  background-color: #ffe15c; 
+  color: #246e34; 
+    font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 14px 30px; 
+  border: none;
+  width: 270px;
+  border-radius: 70px;
+  margin-top: -105px;
+  text-decoration: none;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transform: none;
+  position: relative;
+  left: 280px;
+  display: block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: initial; 
+}
+.open-campus-button:hover {
+  background-color: #f9a641;
+  transform: translateY(-4px); 
+  color: #ffffff;
+}
+
+
+
+/* STUDENTS PAGE */
+
+.studentssymbol{
+  position: relative;
+  top: 20px;
+
+}
+
+.students-intro{
+  display: grid;
+  max-width: 1000px;
+  width: 800px;
+  margin-left: 300px;
+  margin-top: 70px;
+      font-family: "Zen Maru Gothic", sans-serif;
+  
+  
+}
+#subpage h1{
+  font-family: "Zen Maru Gothic", sans-serif;
+  max-width: 1000px;
+  padding: 200px;
+  width: 400px;
+
+    
+}
+.svg-heading {
+  margin-top: 40px;    
+  margin-bottom: 40px;
+
+
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.students-intro p{
+  font-size: 20px;
+  margin-left: -160px;
+  max-width: 1000px;
+  width: 800px;
+  text-align: left;
+  margin-top: -5px;
+  
+}
+.student-wrapper {
+  display: flex;
+  background-color:#fcf1cd;
+  flex-direction: column;
+  height: 660px;
+  padding:0;
+  margin: 0;
+  align-items: center;
+  gap: 10px; 
+}
+.student-row {
+  display: flex;
+  justify-content: center;
+  gap: 2px; 
+  padding: 0;
+  margin: 0;
+}
+.student-card{
+  
+  margin: 30px;
+  display: inline-block;
+  vertical-align: top;
+}
+.student-card a{
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.student-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 10px solid #b5dfa7;
+  box-shadow: none;
+  transition: transform 0.3s ease;
+}
+.student-card img:hover {
+  transform: translateY(-5px);
+  cursor: pointer; 
+  transform: scale(1.1);       
+}
+.student-card p {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  list-style: none;
+}
+.student-name {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  margin-top: 8px;
+  font-weight: 600;
+  color: #839f65;
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+.student-card:hover .student-name {
+  opacity: 1;
+}
+.student-card:hover img {
+  transform: scale(1.1);
+}
+.student-card:hover p {
+  opacity: 1;
+}
+
+.student-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 20px; 
+  margin-top: 20px; 
+  
+}
+
+
+.heading-with-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;           
+  font-size: 28px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: white;
+  background-color: #A9DBB3;
+  padding: 10px 20px;
+  border-radius: 8px;
+  width: fit-content;
+  margin: 20px auto;
+  
+  
+  writing-mode: horizontal-tb;
+  text-orientation: mixed;
+}
+
+
+.svg-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 10px; 
+  margin: 20px auto;
+  width: fit-content;
+}
+
+.student-icon {
+  fill: white; 
+}
+
+
+.student-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 8px rgba(0,0,0,0.15);
+}
+
+
+.nav-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%;
+  
+}
+.nav-container .right-nav{
+  gap: 1px;
+  margin-right: 250px;
+  transform: translate(0, -170px);
+  color: #e6b060;
+  animation:backwards;
+
+}
+
+.right-nav .nav-link:hover svg {
+  transform: translateX(10px);
+  transition: transform 0.3s ease;
+}
+
+
+.left-nav .nav-link:hover svg {
+  transform: translateX(-10px);
+  transition: transform 0.3s ease;
+}
+
+.nav-container .left-nav{
+  gap: 1px;
+  margin-left: 150px;
+  transform: translate(0,-170px);
+  color: #e6b060;
+
+}
+
+.nav-section {
+  display: flex;
+  align-items: center;
+  gap: 100px; 
+}
+
+.nav-icon {
+  width: 48px; 
+  height: 48px;
+  
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  padding: 0 50px; 
+}
+
+.nav-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-icon {
+  width: 40px;
+  height: 40px;
+  color: #e6b060;
+}
+
+
+
+
+/* LI`s PAGE */ 
+
+
+
+.students-lisan h2{
+  font-size: 24px;
+  font-weight: 400;
+  background-color: #99D096; 
+  color: white;              
+  padding: 10px 20px;      
+  margin: 20px 0;
+  width: 100%;              
+  box-sizing: border-box;
+  
+}
+
+.li-interview {
+  max-width: 600px; 
+  width: 500px;   
+  margin: 0 auto;     
+  padding: 20px;
+  margin-left: 230px;
+      font-family: "Zen Maru Gothic", sans-serif;
+}
+
+.li-interview .info-row {
+  display: flex;
+  gap: 10px;           
+  margin-bottom: 10px;
+  align-items: flex-start;
+}
+
+.li-interview dt {
+  min-width: 80px;    
+  margin: 0;
+  font-weight: bold;
+  color: #71ad70;
+  
+}
+
+.li-interview dd {
+  margin: 0;
+}
+
+.li-answers {
+  max-width: 900px;
+  margin: 10px auto;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 30px;
+      font-family: "Zen Maru Gothic", sans-serif;
+}
+
+.li-answers dt {
+  color: #e6b060;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-left: -70px;
+  width: 1000px;
+}
+
+.li-answers dd {
+  margin-top: 15px;
+  margin-left: 150px;
+  margin-bottom: 15px;
+  width: 600px;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+
+/*NATALIAS PAGE*/ 
+
+
+.natalia-interview {
+  max-width: 600px; 
+  width: 500px;   
+  margin: 0 auto;     
+  padding: 20px;
+  margin-left: 230px;
+  font-size: 16px;
+      font-family: "Zen Maru Gothic", sans-serif;
+}
+.natalia-interview dt {
+  min-width: 80px;    
+  margin: 0;
+  font-weight: bold;
+  color: #71ad70;
+}
+
+.natalia-interview dd {
+  margin: 0;
+}
+
+.student-info {
+  border-collapse: collapse;
+  margin: 1em 0;
+  width: fit-content; 
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+}
+
+
+.natalia-answers dt {
+  color: #e6b060; 
+  font-weight: bold;
+  margin-top: 50px;
+  margin-left: 10px;
+  font-size: 18px;
+  width: 1000px;
+      font-family: "Zen Maru Gothic", sans-serif;
+  
+}
+
+.natalia-answers dd {
+  margin-top: 15px;
+  margin-left: 180px;
+  margin-bottom: 15px;
+  width: 600px;
+  font-size: 18px;
+  text-align: center;
+      font-family: "Zen Maru Gothic", sans-serif;
+}
+
+/*SULAIS PAGE */ 
+#subpage {
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+
+.sulai-interview {
+  max-width: 600px; 
+  width: 500px;    
+  margin: 0 auto;       
+  padding: 20px;
+  margin-left: 230px;
+  margin-bottom: 20px;
+      font-family: "Zen Maru Gothic", sans-serif;
+}
+.sulai-interview dt {
+  min-width: 80px;    
+  margin: 0;
+  font-weight: bold;
+  color: #71ad70;
+}
+
+.sulai-interview dd {
+  margin: 0;
+}
+
+.sulai-interview .info-row {
+  display: flex;
+  gap: 10px;           
+  margin-bottom: 10px; 
+  align-items: flex-start;
+}
+
+.sulai-interview dt {
+  min-width: 80px;    
+  margin: 0;
+  font-weight: bold;
+  color: #71ad70;
+}
+
+.sulai-interview dd {
+  margin: 0;
+}
+
+.sulai-answers {
+  max-width: 900px;
+  margin: 10px auto;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.sulai-answers dt {
+  color: #e6b060; 
+  font-weight: bold;
+  margin-top: 30px;
+  margin-left: -40px;
+  width: 1000px;
+      font-family: "Zen Maru Gothic", sans-serif;
+}
+
+.sulai-answers dd {
+  margin-top: 15px;
+  margin-left: 100px;
+  margin-bottom: 15px;
+  width: 700px;
+  text-align: center;
+      font-family: "Zen Maru Gothic", sans-serif;
+}
+
+/* KOUS PAGE  */ 
+
+
+.kou-interview .info-row {
+  display: flex;
+  gap: 10px;           
+  margin-bottom: 10px; 
+  align-items: flex-start;
+  
+}
+
+.kou-interview {
+  max-width: 600px; 
+  width: 500px;    
+  margin: 0 auto;       
+  padding: 20px;
+  margin-left: 230px;
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+.kou-interview dt {
+  min-width: 80px;    
+  margin: 0;
+  font-weight: bold;
+  color: #71ad70;
+}
+
+.kou-interview dd {
+  margin: 0;
+}
+
+.kou-answers {
+  max-width: 900px;
+  margin: 10px auto;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.kou-answers dt {
+  color: #e6b060; 
+  font-weight: bold;
+  margin-top: 50px;
+  margin-left: -70px;
+  width: 1000px;
+      font-family: "Zen Maru Gothic", sans-serif;
+}
+
+.kou-answers dd {
+  margin-top: 15px;
+  margin-left: 150px;
+  margin-bottom: 15px;
+  width: 600px;
+  text-align: center;
+      font-family: "Zen Maru Gothic", sans-serif;
+}
+
+/* POS PAGE  */ 
+
+
+.po-interview .info-row {
+  display: flex;
+  gap: 10px;           
+  margin-bottom: 10px; 
+  align-items: flex-start;
+}
+
+.po-interview {
+  max-width: 600px; 
+  width: 500px;    
+  margin: 0 auto;      
+  padding: 20px;
+  margin-left: 230px;
+      font-family: "Zen Maru Gothic", sans-serif;
+}
+.po-interview dt {
+  min-width: 80px;   
+  margin: 0;
+  font-weight: bold;
+  color: #71ad70;
+}
+
+.po-interview dd {
+  margin: 0;
+}
+
+.po-answers dt {
+  color: #e6b060; 
+  font-weight: bold;
+  margin-top: 50px;
+  margin-left: -10px;
+  width: 1000px;
+  font-size: 18px;
+      font-family: "Zen Maru Gothic", sans-serif;
+}
+
+.po-answers dd {
+  margin-top: 15px;
+  margin-left: 200px;
+  margin-bottom: 15px;
+  width: 600px;
+  font-size: 18px;
+  text-align: center;
+      font-family: "Zen Maru Gothic", sans-serif;
+}
+
+/* COMON CODES */
+
+.students-lisan-img-wrapper,
+.students-natalia-img-wrapper,
+.students-sulai-img-wrapper,
+.students-kou-img-wrapper,
+.students-po-img-wrapper {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  padding: 19px;
+  background: linear-gradient(to bottom, #C2E6C1 50%, #FFE1A6 50%);
+  box-shadow: 8px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+.students-lisan-img-wrapper img,
+.students-natalia-img-wrapper img,
+.students-sulai-img-wrapper img,
+.students-kou-img-wrapper img,
+.students-po-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  background-color: white;
+}
+
+.student-section-title {
+  background-color: #A9DBB3;  
+  color: white;
+  font-size: 24px;
+  padding: 10px 20px;
+  margin: 40px auto 20px auto;
+  margin-top: 20px;
+  width: 500px;
+  max-width: 800px;  
+  box-sizing: border-box;
+  text-align: center; 
+  border-radius: 10px;
+  box-shadow: 8px 10px rgba(0, 0, 0, 0.3);
+
+}
+/*ABOUT ME PAGE */ 
+
+
+.aboutme-img-wrapper {
+  position: relative;
+  width: 220px; 
+  height: 220px;
+  border-radius: 50%;
+  padding: 19px;  
+   background: linear-gradient(to bottom, #C2E6C1 50%, #FFE1A6 50%);
+  box-shadow:  8px 15px rgba(0, 0, 0, 0.3); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto; 
+}
+
+.aboutme-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+  background-color: white; 
+}
+.aboutme-text1{
+  margin-left: 0.5px;
+  margin-top: 40px;
+  height: 1250px;
+}
+.aboutme-text1 dl{
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  flex-wrap: wrap; 
+  max-width: 800px;
+  margin: 0 auto;
+  margin-right: -70px;
+}
+
+.aboutme-text1 dt {
+      font-family: "Zen Maru Gothic", sans-serif;
+  color: #eeb354;
+  font-weight: 600;
+  min-width: 80px; 
+}
+.aboutme-text1 dd {
+  margin: 0;
+      font-family: "Zen Maru Gothic", sans-serif;
+}
+.aboutme-text1 h2{
+      font-family: "Zen Maru Gothic", sans-serif;
+  background-color: #A9DBB3;  
+  color: white;
+  font-size: 24px;
+  padding: 10px 20px;
+  margin: 40px auto 20px auto;
+  margin-top: 20px;
+  width: 500px;
+  max-width: 800px;  
+  box-sizing: border-box;
+  text-align: center; 
+  border-radius: 10px; 
+  box-shadow: 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+.aboutme-text1 p {
+  font-family: "Zen Maru Gothic";
+  font-size: 20px;
+  width: 520px;
+transform: translate(0, 50px);
+  margin-left: 260px;
+  text-align: left;
+}
+
+/* RULES SITE */
+
+.svg-heading {
+  position: relative;
+  display: inline-block;
+}
+
+.svg-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Zen Maru Gothic';
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+.rules1-text1 {
+  margin-top: 40px; 
+  margin-bottom: -150px;
+  max-width: 1000px;
+  height: 150px;
+
+}
+.img-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.green-shadow {
+  position: absolute;
+  top: 40px;      
+  left: -50px;      
+  width: 350px;
+  height: 240px;
+ background: linear-gradient(
+    to top,
+    hsl(129, 23%, 52%),
+    hsl(127, 41%, 65%),
+    hsl(131, 37%, 82%)
+  );
+   border-radius: 8px;
+}
+
+.classroom-img {
+  margin-top:80px;
+  margin-right: 350px;
+  position: relative;
+  width: 400px;     
+  height: 300px;
+   border-radius: 8px;
+}
+.two-columns {
+  display: flex;
+  gap: 30px;
+  margin: 0px 0;
+}
+
+.left-text p {
+  position: relative;
+  width: 330px; 
+  max-width: 1000px;
+  font-size: 20px;
+  line-height: 1.8;
+  margin-top: -250px;
+  left: 590px;
+  padding: 0;
+  font-family: "Zen Maru Gothic";
+}
+
+.right-text p {
+  position: relative;
+  width: 760px; 
+  font-size: 20px;
+  line-height: 1.8;
+  margin: 0;
+  margin-left: 120px;
+  text-align: left;
+  font-family: "Zen Maru Gothic";
+  top: 30px;
+  
+}
+.page-spacer {
+  height: 00px; 
+}
+
+
+.notebook-leaf {
+  position: relative;
+  top: 30px;
+  background-color: #fff8da; 
+  width: 450px;
+  text-align: left;
+  max-width: 90vw;
+  padding: 40px 50px 40px 90px; 
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 4px 4px 15px rgba(0,0,0,0.1);
+  font-family: "Zen Kurenaido", sans-serif;
+  font-size: 20px;
+  line-height: 1.8;
+  color: #333;
+  text-decoration: none;
+  list-style: none;
+}
+.notebook-leaf ul {
+  list-style: none;
+  padding-left: 0; 
+  margin: 0;       
+}
+
+.notebook-leaf li {
+  list-style: none; 
+}
+.notebook-leaf li {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.notebook-leaf li:nth-child(1) { animation-delay: 0.8s; }
+.notebook-leaf li:nth-child(2) { animation-delay: 1.8s; }
+.notebook-leaf li:nth-child(3) { animation-delay: 2.8s; }
+.notebook-leaf li:nth-child(4) { animation-delay: 3.8s; }
+.notebook-leaf li:nth-child(5) { animation-delay: 4.8s; }
+.notebook-leaf li:nth-child(6) { animation-delay: 5.8s; }
+.notebook-leaf li:nth-child(7) { animation-delay: 6.8s; }
+.notebook-leaf li:nth-child(8) { animation-delay: 7.8s;  }
+
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.notebook-leaf::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff; 
+  border-radius: 50%;
+  box-shadow:
+    0 50px #ffffff,
+    0 100px #ffffff,
+    0 150px #ffffff,
+    0 200px #ffffff,
+    0 250px #ffffff,
+    0 300px #ffffff,
+    0 350px #ffffff,
+    0 400px #ffffff,
+    0 450px #ffffff;
+    
+  z-index: 10;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.notebook-leaf p, 
+.notebook-leaf ul, 
+.notebook-leaf li {
+  margin: 0 0 1em 0;
+}
+
+
+.img-shadow-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-left: -40px;
+  top: 40px; 
+  
+}
+
+.shadow-box {
+  position: absolute;
+  top: 20px;       
+  left: -20px;     
+  width: 400px;
+  height: 280px;
+  margin-left: 130px;
+  margin-top: 30px;
+ background: linear-gradient(
+    to bottom,
+    hsl(129, 23%, 52%),
+    hsl(127, 41%, 65%),
+    hsl(131, 37%, 82%)
+  );
+  z-index: 0; 
+  margin-top: 80px;  
+   border-radius: 8px;   
+}
+.gathered {
+  width: 400px;
+  height: 250px;
+  position: relative;
+  z-index: 1;      
+  margin-left: 150px;
+  margin-top: 60px;
+   border-radius: 8px;
+}
+.new-left {
+  position: relative;
+  top: 90px;
+  left: 550px;
+  margin-top: -170px;
+  font-size: 20px;
+  width: 40%;
+  font-family: "Zen Maru Gothic";
+   border-radius: 8px;
+}
+.new-right {
+  position: relative;
+    width: 350px; 
+  font-size: 20px;
+  top: 200px;
+  left: 80px;
+  font-family:"Zen Maru Gothic";
+   border-radius: 8px;
+
+}
+.diligent{
+  height: 330px;
+  width: 300px;
+  margin-left: 400px;
+  position: relative;
+  bottom: 170px;
+  z-index: 1;
+   border-radius: 8px;
+}
+
+.shadow-box2{
+ background: linear-gradient(
+    to bottom,
+    
+    hsl(129, 23%, 52%),
+    hsl(127, 41%, 65%),
+    hsl(131, 37%, 82%)
+  );
+  position: relative;
+left: 600px;
+bottom: 380px;
+  width: 300px;
+  height: 270px;
+   border-radius: 8px;
+
+}
+.image-container{
+  height: 350px;
+}
+
+
+nav .hamburger {
+  display: none; 
+}
+
+
+/* MOBILEVERSION */
+
+
+@media screen and (max-width: 768px) {
+ 
+  body, html {
+  height: auto;       
+  overflow-y: auto;   
+}
+
+  /*  HEADER  */
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    height: 60px;
+    z-index: 1000;
+  }
+  
+
+  nav .logo img {
+    max-height: 50px;
+    width: auto;
+    position: relative;
+    right: 450px;
+  }
+
+  nav .hamburger {
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+    display: block;
+    position:fixed;
+    left: 65%;
+    margin-top: 10px;
+  }
+
+  nav ul.menu {
+    display: none;    
+    flex-direction: column;
+    width: 300px;
+    padding: 0;
+    background-color: #71ad70;
+    z-index: 10;
+    top: 100%;
+    position: absolute;
+  }
+
+  nav ul.menu li a {
+    display: block;
+    padding: 12px 20px;
+    text-align: left;
+  }
+
+ 
+  nav ul.menu.active {
+  position: fixed;   
+  top: 75px;        
+  right: 0;      
+  display: flex;
+  gap: 20px;         
+  z-index: 1000;
+  width: 400px;
+  max-width: 250px;
+    
+  }
+  nav ul.menu.active a{
+    margin-left: 10px;
+
+  }
+
+
+  /*  MAIN CONTENT  */
+  main {
+    width: 100%;
+    padding: 0;
+    height: auto;
+  }
+  main img {
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+  }
+.container {
+  position: relative;
+  flex-direction: column;
+  width: 100%;         
+  max-width: 768px;    
+  height: auto;       
+  box-sizing: border-box; 
+}
+
+ .slider {
+  width: 100%;
+  max-width: 768px;  
+height: 450px;  
+  max-height: 768px;    
+  aspect-ratio: 16/9;
+  }
+  
+  .main-title {
+    writing-mode: horizontal-tb !important; 
+    text-align: center;
+    margin: 20px auto;
+    font-size: 22px;
+    width: 100%;        
+    line-height: 1.5;
+    font-size:30px;
+    word-break: break-word; 
+  }
+  main h2 {
+    font-size: 22px;      
+    line-height: 1.4;    
+    
+    width: 100%;         
+    text-align: center;   
+    margin-left: 23px;
+    position: relative;
+    top: 30px;
+  }
+ h2::after{
+  width: 100%;
+  
+
+ }
+
+.top-text {
+  width: 100%;              
+  max-width: 620px;         
+  margin: 0 auto;         
+  padding: 10px 15px;       
+  box-sizing: border-box;   
+  position: relative;
+  top: 80px;
+}
+
+.top-text p {
+  width: 100%;              
+  font-size: 18px;        
+  line-height: 1.6;        
+  margin: 0 0 20px;         
+  word-break: break-word;  
+}
+.top-students{
+   display: flex;
+  height: auto; 
+  width: 100%;
+  margin: 0;
+ padding: 0;
+ min-width: 200px;
+ max-width: 900px;
+ position: relative;
+  }
+
+.top-rules{
+  display: flex;
+height: 650px; 
+width: 100%;
+margin: 0;
+padding: 0;
+min-width: 200px;
+max-width: 900px;
+position: relative;
+}
+.top-aboutme{
+display: flex;
+height: 650px; 
+width: 100%;
+margin: 0;
+padding: 0;
+min-width: 200px;
+max-width: 900px;
+position: relative;  
+top: 50px;
+}
+
+
+ .top-students h3, .top-rules h3, .top-aboutme h3{
+  width: 100%;
+  font-size: 22px;
+  margin: 10px;
+ } 
+
+.top-studentpic img,
+.top-rulespic img,
+.top-about-me-pic img {
+  width: 350px;      
+  height: 200px;      
+  object-fit: cover;  
+  display: block;
+  max-width: 300px;
+  margin: 0;
+  padding: 0;
+  border-top-left-radius: 20px;  
+    border-top-right-radius: 20px;
+   border-bottom-left-radius: 20px;   
+    border-bottom-right-radius: 20px; 
+}
+
+  .student-text, .top-rules-text, .aboutme-text{
+  flex: 1;                     
+  display: flex;
+  flex-direction: column;
+  justify-content: center;      
+  text-align: center;          
+  padding: 10px;
+  
+  }
+  .student-text p, .top-rules-text p, .aboutme-text p{
+  display: flex;              
+  justify-content: center;   
+  align-items: center;        
+  text-align: center;         
+  padding: 10px;             
+  width: 100%;               
+  box-sizing: border-box;
+  margin: 0 5px 180px;
+  font-size: 18px;
+  
+  }
+  .details1 , .details2 , .details3 {
+    left: 50%;
+   position: absolute;
+  top: 400px;             
+  width: 200px;
+    margin-top: 50px;  
+    margin-left: -100px;     
+  z-index: 1;
+  }
+
+
+
+/*  FOOTER MOBILE  */
+ 
+footer {
+    min-width: 100%;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .footer-inner {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    gap: 5px;           
+    height: 400px;  
+  }
+
+  /* Open Campus */
+.open-campus-button {
+  margin: 20px auto 10px auto;  
+  width: 180px;                
+  max-width: 100%;            
+  display: block;             
+  position: relative;
+  bottom: 150px;                    
+  left: 65px;
+
+  
+}
+
+
+.footer-links {
+  display: block;
+  justify-content: center;   
+  flex-wrap: nowrap;         
+  margin-top: 10px;         
+  padding: 0;
+
+
+}
+
+.footer-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  bottom: 20px;
+  right: 120px;
+  padding: 5px;
+  width: 120px;
+  margin: 0;
+}
+
+
+  /*  Address , copyright  */
+  footer address,
+  footer .school-address,
+  footer p.copy-right {
+    margin: 5px 0 0 0;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    top: 250px;
+    right: 10px;
+  }
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: inline-block;
+  background-color: #aec1aa;
+  color: white;
+  font-size: 20px;
+  padding: 12px 16px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+.top-btn:hover {
+  background-color: #bcef9f;
+}
+
+
+
+
+
+/*STUDENT PAGE*/
+
+
+  
+  .students-intro {
+    display: block;
+    width: 90%;          
+    margin: 20px auto;  
+    margin-top: 10px;
+  }
+
+  .students-intro p {
+    margin-left: 0;      
+    width: 100%;
+    font-size: 16px;
+  }
+
+  
+  .student-wrapper {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .student-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  
+  .student-card {
+    margin: 15px auto;
+  }
+
+  .student-card img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .student-name,
+  .student-card p {
+    font-size: 16px;
+  }
+
+
+  .heading-with-icon {
+    font-size: 20px;
+    padding: 8px 12px;
+    width: 90%;
+    max-width: 300px;
+    margin: 15px auto;
+  }
+
+  .svg-heading {
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
+    gap: 5px;
+  }
+
+
+  .nav-container {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 10px;
+    margin-top: 20px;
+  }
+
+  .nav-section {
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .nav-container .left-nav,
+  .nav-container .right-nav {
+    margin: 0;
+    transform: none;
+  }
+
+  
+  .studentssymbol {
+    top: 20px;
+    margin-bottom: 10px;
+  }
+.students-intro {
+    padding-top: 80px; 
+  }
+
+
+
+
+/*LI PAGE */ 
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; 
+}
+main {
+  padding-top: 70px; 
+}
+.students-lisan h2 {
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #99D096; 
+  color: white;              
+  padding: 10px;
+  margin: 15px 0;
+  width: 100%;              
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+.li-interview {
+  width: 90%;          
+  max-width: 100%;     
+  margin: 0 auto;     
+  padding: 10px;
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+
+.li-interview .info-row {
+  display: flex;
+  flex-direction: column; 
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.li-interview dt {
+  min-width: auto;     
+  font-weight: bold;
+  color: #71ad70;
+}
+
+.li-interview dd {
+  margin: 0 auto;
+}
+
+
+.li-answers {
+  width: 90%;
+  margin: 15px auto;
+  padding: 10px;
+  line-height: 1.6;
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+
+.li-answers dt {
+  color: #e6b060;
+  font-weight: bold;
+  margin: 20px 0 10px;
+  text-align: center;
+  width: 100%;     
+}
+
+.li-answers dd {
+  margin: 10px 0;
+  width: 90%;
+  text-align: center; 
+  line-height: 1.5;
+}
+
+
+
+
+  .nav-container {
+    display: flex;
+    flex-direction: row;   
+    justify-content: center;
+    align-items: center;
+    gap: 25px;             
+    margin-top: 15px;      
+    position: relative;
+    right: 13px;
+  }
+  .nav-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .student-section-title {
+    width: 90%;
+    top: -10px;
+    font-family: "Zen Maru Gothic", sans-serif;
+
+  }
+  
+
+
+/* NATALIA PAGE */ 
+
+.natalia-interview {
+  width: 90%;          
+  max-width: 100%;     
+  margin: 0 auto;    
+  padding: 10px;
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+.natalia-answers dt {
+  color: #e6b060;
+  font-weight: bold;
+  margin: 20px;
+  text-align: center;
+  width: 90%;   
+}
+
+.natalia-answers dd {
+  margin: 20px;
+  width: 90%;
+  text-align: center; 
+  line-height: 1.5;
+
+ 
+}
+
+
+/* SULAI PAGE */
+
+.sulai-interview {
+  width: 90%;          
+  max-width: 100%;     
+  margin: 0 auto;     
+  padding: 10px;
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+.sulai-answers dt {
+  color: #e6b060;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;     
+}
+
+.sulai-answers dd {
+  margin: 20px 0;
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center; 
+  line-height: 1.5;
+
+}
+
+
+/* KOU PAGE */ 
+
+.kou-interview {
+  width: 90%;          
+  max-width: 100%;     
+  margin: 0 auto;     
+  padding: 10px;
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+.kou-answers dt {
+  color: #e6b060;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;    
+
+}
+
+.kou-answers dd {
+  margin: 10px 0;
+  width: 100%;
+  text-align: center; 
+  line-height: 1.5;
+}
+
+
+/* PO PAGE */
+
+.po-interview {
+  width: 90%;         
+  max-width: 100%;     
+  margin: 0 auto;     
+  padding: 10px;
+  
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+.po-answers dt {
+  color: #e6b060;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+  width: 90%;     
+}
+
+.po-answers dd {
+  margin: 30px 0;
+  width: 90%;
+  text-align: center; 
+  line-height: 1.5;
+  margin-left: 10px;
+}
+
+
+
+/* ABOUT ME PAGE */ 
+
+
+.aboutme-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+  background-color: white; 
+}
+.aboutme-text1{
+min-height: 100%;   
+  height: auto;
+    background-color: white;
+  min-height: 100%;  
+  height: auto;      
+  padding-bottom: 40px; 
+
+  
+}
+.aboutme-text1 dl{
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  flex-wrap: wrap; 
+  max-width: 800px;
+  margin: 0 auto;
+  margin-right: 0;
+  width: 90%;
+}
+
+.aboutme-text1 dt {
+  color: #eeb354;
+    font-family: "Zen Maru Gothic", sans-serif;
+}
+.aboutme-text1 dd {
+  margin: 0;
+    font-family: "Zen Maru Gothic", sans-serif;
+}
+.aboutme-text1 h2{
+  background-color: #A9DBB3;  
+  color: white;
+  font-size: 24px;
+  padding: 10px 20px;
+  margin: 40px auto 20px auto;
+  margin-top: 20px;
+  width: 80%;
+  max-width: 800px;  
+  box-sizing: border-box;
+  text-align: center; 
+  border-radius: 10px; 
+  box-shadow: 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+.aboutme-text1 p {
+  font-size: 18px;
+  width: 90%;
+  margin-left: 30px;
+
+}
+h2{
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+
+
+/* RULES PAGE*/ 
+
+.classroom-img{
+  display: block;
+  width: 80%;
+  left: 50px;
+  height:auto;
+  max-width: 400px;
+}
+
+.gathered{
+  display: block;
+  width: 70%;
+  right: 70px;
+  height: auto;
+  max-height: 400px;
+}
+.diligent {
+    display: block;
+    width: 70%;
+    max-width: fit-content;
+    right: 340px;
+    top: 10px;
+    height:330px;
+    max-width: 350px;
+    min-width: 200px;
+
+}
+.green-shadow{
+  left: 20px;
+  width: 80%;
+  max-width: 400px;
+  height: 80%;
+  max-height: 400px;
+}
+.shadow-box{
+  display: block;
+  width: 70%;
+  height:90%;
+  max-height: 400px;
+  top: -100px;
+
+}
+.shadow-box2{
+  width: 60%;
+  max-width: 300px;
+  left: 30px;
+margin-top: 40px;
+height: 300px;
+max-height: 300px; 
+}
+
+  .left-text p {
+    
+    width: 90%;
+    position: static;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    margin: 20px;
+  }
+
+
+  .right-text p{
+    width: 90%;
+    margin: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    position: static;
+  }
+  .new-left{
+    width: 90%;
+    margin: 90px auto 20px auto;
+    font-size: 18px;
+    line-height: 1.6;
+    position: static;
+  }
+
+  .new-right{
+    width: 90%;
+    margin: 10px auto 20px auto;
+    font-size: 18px;
+    line-height: 1.6;
+    position: static;
+  }
+
+  .notebook-leaf::before {
+    display: block;          
+  }
+
+  .svg-title {
+    font-size: 20px;         
+  }
+
+  .page-spacer {
+    height: 50px;        
+  }
+
+
+.notebook-leaf {
+  position: relative;
+  width: 80%;
+  height: auto; 
+  margin: 40px auto;
+  font-size: 16px;
+  padding: 20px;
+  max-width: 500px;
+}
+
+.notebook-leaf li {
+  margin-left: 35px;
+  font-size: 18px;
+}
+
+}
+
+ 
+/*NOTE PC */ 
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+  
+
+  header {
+    max-width: 1440px;          
+    margin: 0 auto;
+    width: 1400px;
+    padding: 10px 20px;
+    box-sizing: border-box;    
+  
+  }
+
+  .horizontal-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+  }
+
+  .horizontal-menu .menu {
+    display: flex;
+    position: relative;
+    right: 80px;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .horizontal-menu .menu li a {
+    font-size: 18px;
+    width: 100%;
+    
+  }
+  .logo{
+    position: relative;
+    right: 90px;
+  }
+
+  
+  main {
+    max-width: 1400px;
+    margin:0;         
+    padding: 0;
+    width: 1000px;
+    margin-left: 210px;
+    box-sizing: border-box;
+
+  }
+
+  .two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px;
+    align-items: start;
+  }
+
+  .two-columns img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .two-columns .right-text {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  /* === FOOTER === */
+  footer {
+    width: 1400px;
+    max-width: 1400px;
+    margin: 0;
+    padding: 0;
+    height: 500px;
+    box-sizing: border-box;
+  }
+
+  footer .footer-inner {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .footer-links {
+    height: auto;
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+  }
+  .open-campus-button{
+    position: relative;
+    top: 30px;
+  }
+}
